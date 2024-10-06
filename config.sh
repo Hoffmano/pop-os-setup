@@ -6,7 +6,7 @@ sudo add-apt-repository ppa:neovim-ppa/unstable
 
 sudo apt update
 
-sudo apt-get install alacritty gh snapd ripgrep fd-find gnome-tweaks vivaldi-stable -y
+sudo apt-get install alacritty gh snapd ripgrep fd-find -y
 
 # Customizar o Vivaldi
 # https://github.com/tovifun/VivalArc
@@ -14,8 +14,6 @@ sudo apt-get install alacritty gh snapd ripgrep fd-find gnome-tweaks vivaldi-sta
 # Broser extensions
 # dark reader
 # bitwardin
-
-wallpaperUrl='https://images.wallpapersden.com/image/download/macos-12-monterey-stock-light_bGxsaGmUmZqaraWkpJRobWllrWdma2U.jpg'
 
 cd ./Downloads/
 
@@ -42,21 +40,6 @@ else
 fi
 
 curl -sS https://starship.rs/install.sh | sh
-
-echo 'Install Gnome Themes'
-echo 'Enter: https://www.gnome-look.org/browse'
-echo 'Extract files to .icons and .themes'
-cd
-mkdir -p .themes
-mkdir -p .icons
-while true; do
-  read -p "Do you want to continue? yn" yn
-  case $yn in
-  [Yy]*) break ;;
-  [Nn]*) exit ;;
-  *) echo "Please answer yes or no." ;;
-  esac
-done
 
 git config --global user.email "hoffman.devs@gmail.com"
 git config --global user.name "Hoffmano"
