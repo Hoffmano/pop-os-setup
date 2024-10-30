@@ -7,6 +7,7 @@ sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt update
 
 sudo apt-get install alacritty gh snapd ripgrep fd-find -y
+sudo snap install nvim
 
 # Customizar o Vivaldi
 # https://github.com/tovifun/VivalArc
